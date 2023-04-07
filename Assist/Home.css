@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.active {
+  border-bottom: solid;
+}
+
+.container {
+  background-image: url(Image/fin.jpg);
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 2vh;
+
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    "nav"
+    "herro"
+    "herro"
+    "herro"
+    "herro"
+    "herro"
+    "herro"
+    "footer";
+}
+.logo {
+  align-self: self-start;
+}
+.logo-text {
+  font-size: 7vmin;
+  font-family: "Black Ops One", cursive;
+  box-shadow: 1px 2px 0 0, 1px -1px 0 0px;
+  border-radius: 227px;
+}
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(0 0 0 / 62%);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10vw;
+  font-size: 4vmin;
+}
+.herro {
+  justify-content: space-evenly;
+  grid-area: herro;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.heroinfo {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  grid-template-areas:
+    "hero-text"
+    "Button";
+}
+.hero-text {
+  grid-area: hero-text;
+}
+
+.animation {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid white;
+  animation: typing 2.5s steps(30), cursor 1s step-end 5s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor {
+  from {
+    border-color: white;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+.Button {
+  /* for the class that contain the button and a */
+  grid-area: Button;
+}
+.Button a {
+  font-size: 3vmin;
+}
+button {
+  /*For the button */
+  background: #9d97b859;
+  height: 6vh;
+  color: white;
+  font-size: 3vmin;
+}
+img {
+  height: 53vh;
+  border-radius: 8vmin;
+  width: 42vw;
+}
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3vmin;
+  background: rgb(0 0 0 / 62%);
+}
+
+@media (max-width: 912px) {
+  .herro {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 868px) {
+  img {
+    height: 55vh;
+
+    width: 71vw;
+  }
+}
+@media (height: 1368px) {
+  img {
+    height: 55vh;
+
+    width: 71vw;
+  }
+}
+h1 {
+  font-size: 5vmin;
+}

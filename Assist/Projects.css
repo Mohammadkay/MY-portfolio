@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.active {
+  border-bottom: solid;
+}
+
+.incontainer {
+  background-image: url(Image/fin.jpg);
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 2vh;
+
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    "nav"
+    "inherro"
+    "inherro"
+    "inherro"
+    "inherro"
+    "inherro"
+    "inherro"
+    "infooter";
+}
+.logo {
+  align-self: self-start;
+}
+.logo-text {
+  font-size: 7vmin;
+  font-family: "Black Ops One", cursive;
+  box-shadow: 1px 2px 0 0, 1px -1px 0 0px;
+  border-radius: 227px;
+}
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(0 0 0 / 62%);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10vw;
+  font-size: 4vmin;
+}
+.inherro {
+  justify-content: space-evenly;
+  grid-area: inherro;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.infooter {
+  grid-area: infooter;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3vmin;
+  background: rgb(0 0 0 / 62%);
+}
+@media (max-width: 800px) {
+  .incontainer {
+    height: 100%;
+    width: 100%;
+  }
+  .card-group {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.card_link :hover {
+  transform: scale(1.05);
+}
