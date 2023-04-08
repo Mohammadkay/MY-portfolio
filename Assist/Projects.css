@@ -24,6 +24,7 @@ a {
   gap: 2vh;
 
   height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(8, 1fr);
@@ -38,15 +39,17 @@ a {
     "infooter";
 }
 .logo {
-  align-self: self-start;
+  align-self: center;
 }
 .logo-text {
   font-size: 7vmin;
   font-family: "Black Ops One", cursive;
   box-shadow: 1px 2px 0 0, 1px -1px 0 0px;
   border-radius: 227px;
+  scale: 0.7;
 }
 nav {
+  height: 16vh;
   grid-area: nav;
   display: flex;
   justify-content: space-around;
@@ -60,13 +63,19 @@ nav ul {
   font-size: 4vmin;
 }
 .inherro {
+  gap: 8vh;
   justify-content: space-evenly;
   grid-area: inherro;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
+.inherro h1 {
+  font-size: 5vmin;
+}
 .infooter {
+  align-self: end;
+  height: 10vh;
   grid-area: infooter;
   display: flex;
   justify-content: space-around;
@@ -74,16 +83,42 @@ nav ul {
   font-size: 3vmin;
   background: rgb(0 0 0 / 62%);
 }
+
+.card_link :hover {
+  transform: scale(1.05);
+  transition: 2s;
+}
+.card-body {
+  background-color: #070707;
+  border-radius: 0 0 24px 24px;
+  color: #fff;
+}
+.card {
+  border: none;
+  border-radius: 24px 24px;
+}
+img {
+  border-radius: 24px 24px 0 0 !important;
+}
+.col {
+  width: 48%;
+}
 @media (max-width: 800px) {
   .incontainer {
     height: 100%;
-    width: 100%;
+    width: 100vw;
   }
-  .card-group {
+  .cardALL {
     flex-wrap: wrap;
     flex-direction: column;
   }
+  .col {
+    align-self: center;
+    width: 80%;
+  }
 }
-.card_link :hover {
-  transform: scale(1.05);
+@media (min-height: 1172px) {
+  .incontainer {
+    height: 100vh;
+  }
 }

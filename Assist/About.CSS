@@ -44,15 +44,17 @@ a {
     "footer";
 }
 .logo {
-  align-self: self-start;
+  align-self: center;
 }
 .logo-text {
   font-size: 7vmin;
   font-family: "Black Ops One", cursive;
   box-shadow: 1px 2px 0 0, 1px -1px 0 0px;
   border-radius: 227px;
+  scale: 0.7;
 }
 nav {
+  height: 16vh;
   grid-area: nav;
   display: flex;
   justify-content: space-around;
@@ -103,6 +105,7 @@ nav ul {
 
 .About_discrption {
   font-size: 4vmin;
+  padding: 18px;
 }
 .flexskil {
   display: flex;
@@ -155,6 +158,8 @@ nav ul {
   grid-area: meater3;
 }
 footer {
+  align-self: end;
+  height: 10vh;
   grid-area: footer;
   display: flex;
   justify-content: space-around;

@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.active {
+  border-bottom: solid;
+}
+
+.container {
+  background-image: url(Image/fin.jpg);
+  justify-items: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 11vh;
+
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    "nav"
+    "herro"
+    "herro"
+    "herro"
+    "herro"
+    "herro"
+    "herro"
+    "footer";
+}
+.logo {
+  align-self: center;
+}
+.logo-text {
+  font-size: 7vmin;
+  font-family: "Black Ops One", cursive;
+  box-shadow: 1px 2px 0 0, 1px -1px 0 0px;
+  border-radius: 227px;
+  scale: 0.7;
+}
+nav {
+  height: 16vh;
+  width: 100%;
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(0 0 0 / 62%);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10vw;
+  font-size: 4vmin;
+}
+
+.herro {
+  background: rgba(66, 66, 66, 0.72);
+  justify-items: center;
+  grid-area: herro;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas:
+    "hitle hitle"
+    "cardscon cardscon"
+    "cardscon cardscon"
+    "form form"
+    "form form"
+    "form form"
+    "form form"
+    "form form";
+  width: 70%;
+  row-gap: 5vh;
+}
+.cardscon {
+  grid-area: cardscon;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "card1 card2"
+    "card1 card2"
+    "card3 card4"
+    "card3 card4";
+  width: 100%;
+  gap: 2vmin;
+  justify-items: center;
+}
+
+.cards {
+  background: #161616;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-indent: 11px;
+}
+.card_Title {
+  font-size: 4vmin;
+  padding-top: 10px;
+}
+.card_contant {
+  font-size: 3vmin;
+  align-self: center;
+  padding-bottom: 2vh;
+}
+.hitle {
+  grid-area: hitle;
+  text-align: center;
+  align-self: center;
+}
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+form {
+  justify-content: center;
+  grid-area: form;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 3vh;
+  width: 100%;
+  justify-items: center;
+  padding: 0 10px;
+}
+input {
+  align-self: center;
+  height: 6vh;
+  border-radius: 15px;
+  background-color: rgb(23, 23, 23, 0.7);
+  opacity: 101px;
+  width: 100%;
+
+  font-size: 3vmin;
+  border: solid white;
+}
+.name {
+  width: 48%;
+}
+.email {
+  width: 48%;
+}
+.subject {
+  width: 99%;
+}
+textarea {
+  background-color: #1717179e;
+  width: 100%;
+  font-size: 3vmin;
+  resize: none;
+  color: white;
+  border: solid white;
+  border-radius: 15px;
+}
+.btnme {
+  align-self: center;
+  width: 50%;
+  color: white;
+}
+.btnme:hover {
+  background: white;
+  color: black;
+  scale: 1.1;
+  transition: 3s;
+}
+
+footer {
+  align-self: end;
+    height: 10vh;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3vmin;
+  background: rgb(0 0 0 / 62%);
+  width: 100%;
+}
+@media (max-width: 915px) {
+  .cardscon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name {
+    width: 100%;
+  }
+  .email {
+    width: 100%;
+  }
+  form {
+    flex-direction: column;
+  }
+  .herro {
+    display: flex;
+    flex-direction: column;
+  }
+  .card_contant a {
+    font-size: 3vmin;
+  }
+}
