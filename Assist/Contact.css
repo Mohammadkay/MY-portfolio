@@ -5,6 +5,7 @@
 }
 body {
   color: #fff;
+  font-family: math;
 }
 
 a {
@@ -119,6 +120,7 @@ nav ul {
   padding-bottom: 2vh;
 }
 .hitle {
+  font-size: 8vmin;
   grid-area: hitle;
   text-align: center;
   align-self: center;
