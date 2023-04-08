@@ -5,8 +5,12 @@
 }
 body {
   color: #fff;
+  font-family: math;
 }
-
+.mylist li:hover {
+  scale: 1.2;
+  transition: 2s;
+}
 a {
   text-decoration: none;
   color: #fff;
@@ -75,6 +79,7 @@ nav ul {
   grid-template-areas:
     "hero-text"
     "Button";
+  gap: 20px;
 }
 .hero-text {
   grid-area: hero-text;
@@ -113,15 +118,23 @@ nav ul {
 }
 button {
   /*For the button */
-  background: #9d97b859;
+  background: #efefef;
   height: 6vh;
-  color: white;
+  color: black;
   font-size: 3vmin;
+  transition: 2s;
+  border-radius: 15px;
+}
+button:hover {
+  scale: 1.1;
+  background: #0e0e0e;
+  color: white;
+  transition: 2s;
 }
 img {
-  height: 53vh;
+  height: auto;
   border-radius: 8vmin;
-  width: 42vw;
+  width: 30%;
 }
 footer {
   align-self: end;
@@ -139,21 +152,16 @@ footer {
     flex-direction: column-reverse;
     flex-wrap: nowrap;
   }
-}
-@media (max-width: 868px) {
   img {
-    height: 55vh;
-
-    width: 71vw;
+    width: 50%;
   }
 }
-@media (height: 1368px) {
+@media (max-width: 457px) {
   img {
-    height: 55vh;
-
-    width: 71vw;
+    width: 80%;
   }
 }
+
 h1 {
   font-size: 5vmin;
 }
