@@ -201,6 +201,14 @@ footer {
   background: rgb(0 0 0 / 62%);
   width: 100%;
 }
+.foter_icon {
+  display: flex;
+  gap: 15px;
+}
+.foter_icon i:hover {
+  scale: 1.2;
+  transition: 2s;
+}
 @media (max-width: 915px) {
   .cardscon {
     display: flex;

@@ -108,11 +108,26 @@ img {
 .col {
   width: 48%;
 }
+.foter_icon {
+  display: flex;
+  gap: 15px;
+}
+.foter_icon i:hover {
+  scale: 1.2;
+  transition: 2s;
+}
 @media (max-width: 800px) {
   .incontainer {
     height: 100%;
     width: 100vw;
   }
+}
+@media (min-height: 1172px) {
+  .incontainer {
+    height: 100vh;
+  }
+}
+@media (max-width: 362px) {
   .cardALL {
     flex-wrap: wrap;
     flex-direction: column;
@@ -122,8 +137,8 @@ img {
     width: 80%;
   }
 }
-@media (min-height: 1172px) {
-  .incontainer {
-    height: 100vh;
-  }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
