@@ -52,7 +52,7 @@ a {
   scale: 0.7;
 }
 nav {
-  height: 16vh;
+  height: 12vh;
   grid-area: nav;
   display: flex;
   justify-content: space-around;
@@ -62,7 +62,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 10vw;
+  column-gap: 10vw;
   font-size: 4vmin;
 }
 .herro {
@@ -88,7 +88,7 @@ nav ul {
 .animation {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid white;
-  animation: typing 2.5s steps(30), cursor 1s step-end 5s infinite;
+  animation: typing 2.5s steps(22), cursor 1s step-end 5s infinite;
 }
 
 @keyframes typing {
@@ -126,7 +126,7 @@ button {
   border-radius: 15px;
 }
 button:hover {
-  scale: 1.1;
+  scale: 1.08;
   background: #0e0e0e;
   color: white;
   transition: 2s;

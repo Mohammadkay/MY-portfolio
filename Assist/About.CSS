@@ -58,7 +58,7 @@ a {
   scale: 0.7;
 }
 nav {
-  height: 16vh;
+  height: 12vh;
   grid-area: nav;
   display: flex;
   justify-content: space-around;
@@ -72,7 +72,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 10vw;
+  column-gap: 10vw;
   font-size: 4vmin;
 }
 
@@ -96,7 +96,7 @@ nav ul {
   gap: 2vh;
 }
 .About_TITLE {
-  font-size: 12vmin;
+  font-size: 9vmin;
   grid-area: About_TITLE;
   text-align: center;
 }
@@ -137,7 +137,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 6vmin;
+  font-size: 4.5vmin;
 }
 .PSkill_P1 {
   grid-area: PSkill_P1;
@@ -171,14 +171,13 @@ footer {
   font-size: 3vmin;
   background: rgb(0 0 0 / 62%);
 }
-.foter_icon{
-  display:flex;
-  gap:15px
+.foter_icon {
+  display: flex;
+  gap: 15px;
 }
-.foter_icon i:hover{
+.foter_icon i:hover {
   scale: 1.2;
   transition: 2s;
-
 }
 meter {
   width: 50vmin;
