@@ -21,7 +21,7 @@ a {
 }
 
 .incontainer {
-  background-image: url(Image/fin.jpg);
+  background-image: url(Image/fin.png);
 
   background-attachment: fixed;
   background-size: cover;
@@ -60,6 +60,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   background: rgb(0 0 0 / 62%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 }
 nav ul {
   margin: auto;

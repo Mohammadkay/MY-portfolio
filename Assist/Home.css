@@ -20,7 +20,7 @@ a {
 }
 
 .container {
-  background-image: url(Image/fin.jpg);
+  background-image: url(Image/fin.png);
 
   background-attachment: fixed;
   background-size: cover;
@@ -81,6 +81,10 @@ nav ul {
     "Button";
   gap: 20px;
 }
+img {
+  width: 340px;
+  border-radius: 8vmin;
+}
 .hero-text {
   grid-area: hero-text;
 }
@@ -131,11 +135,7 @@ button:hover {
   color: white;
   transition: 2s;
 }
-img {
-  height: auto;
-  border-radius: 8vmin;
-  width: 30%;
-}
+
 footer {
   align-self: end;
   height: 10vh;
@@ -155,18 +155,21 @@ footer {
   transition: 2s;
 }
 
-@media (max-width: 646px) {
+@media (max-width: 690px) {
   .herro {
     flex-direction: column-reverse;
     flex-wrap: nowrap;
   }
-
-
+  img {
+    height: auto;
+    border-radius: 8vmin;
+    width: 41%;
+  }
 }
 
 @media (max-width: 457px) {
   img {
-    width: 80%;
+    width: 58%;
   }
 }
 

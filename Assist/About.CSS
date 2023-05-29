@@ -22,7 +22,7 @@ a {
 .container {
   gap: 6vmin;
   height: 100%;
-  background-image: url(Image/fin.jpg);
+  background-image: url(Image/fin.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
